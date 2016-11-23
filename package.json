@@ -1,0 +1,14 @@
+{
+  "name": "timestamp-challenge",
+  "version": "1.0.0",
+  "description": "Timestamp challenge for FCC",
+  "main": "timestamp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Practicous",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
