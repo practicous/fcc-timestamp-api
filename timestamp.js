@@ -28,16 +28,16 @@ app.get('/time/:timeString', function (req, res) {
       var dateCheck = Date.parse(dateComing);
       var natural = new Date(parseInt(dateComing));
       
-      res.json({"unix": dateComing,  "natural": formatDate(natural)});
+      return res.json({"unix": dateComing,  "natural": formatDate(natural)});
       
     }else{
       
       if(new Date(dateComing).getTime() > 0){
-        res.json({"unix": Date.parse(dateComing),  "natural": dateComing});
+        return res.json({"unix": Date.parse(dateComing),  "natural": dateComing});
       }
       
     }
-    res.json({"unix": null,  "natural": null});
+    return res.json({"unix": null,  "natural": null});
     
 });
 
